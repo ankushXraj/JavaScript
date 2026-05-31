@@ -8,4 +8,5 @@
 //   CHANGING CSS
    var a = document.querySelector("h1")
 a.style.color= "red "  
-a.style.backgroundColor = "yellow"
+a.style.backgroundColor = "yellow" 
+a.style.fontSize = "100px" 
