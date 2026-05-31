@@ -10,3 +10,4 @@
 a.style.color= "red "  
 a.style.backgroundColor = "yellow" 
 a.style.fontSize = "100px" 
+a.style.border = "2px solid black" 
