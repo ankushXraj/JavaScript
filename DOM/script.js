@@ -1,23 +1,11 @@
-var a = document.querySelector("h1")
-console.log(a) 
+const bulb = document.querySelector("#bulb");
+const btn = document.querySelector("button");
 
-// // CHANGING HTML
-//  var a = document.querySelector("h1")
-//   a .innerHTML  = "mere sath padhaoo" 
+if (!bulb) console.error("`#bulb` element not found in DOM");
+if (!btn) console.error("`button` element not found in DOM");
 
-//   CHANGING CSS
-   var a = document.querySelector("h1")
-a.style.color= "red "  
-a.style.backgroundColor = "yellow" 
-a.style.fontSize = "100px" 
-a.style.border = "2px solid black" 
-    
-
- var a = document.querySelector("h1")
-  a.addEventListener("click ",function(){ 
-    a .innerHTML = "mere sath padhaoo"  
-    a.style.color= "red "
-    a.style.backgroundColor = "yellow"
-
-   console.log("h1 is clicked")
-})
+if (btn && bulb) {
+  btn.addEventListener("click", function () {
+    bulb.style.backgroundColor = "yellow";
+  });
+}
